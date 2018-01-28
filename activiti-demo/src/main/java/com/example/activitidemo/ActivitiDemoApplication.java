@@ -23,6 +23,7 @@ public class ActivitiDemoApplication {
 		@GetMapping(value="start-my-process")
 		public void startMyProcess() {
 			runtimeService.startProcessInstanceByKey("");
+			System.out.println("test");
 		}
 	}
 }
